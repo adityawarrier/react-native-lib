@@ -2,7 +2,16 @@
   "name": "react-native-lib",
   "version": "0.0.1",
   "description": "A react-native library with a button and an array utility. (POC)",
-  "scripts": {},
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
   "author": "Aditya Warrier",
   "license": "ISC",
   "devDependencies": {
